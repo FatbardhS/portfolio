@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fatbardh S. — Web Developer</title>
+  <meta name="description" content="Portfolio of Fatbardh S.: full-stack web apps, 3D configurators and business websites." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a href="#top" class="logo">FS<span>.</span></a>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <p class="eyebrow">Web developer</p>
+      <h1>Hi, I'm Fatbardh.<br /><span class="grad">I build websites and web apps</span> that people actually use.</h1>
+      <p class="lead">
+        From restaurant sites with their own admin panel to a PC builder that checks every part for compatibility
+        and a 3D wardrobe configurator that prices itself, here's what I've built so far.
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#projects">See my work</a>
+        <a class="btn" href="https://github.com/FatbardhS" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <ul class="stats">
+        <li><strong>5</strong><span>projects</span></li>
+        <li><strong>4</strong><span>live online</span></li>
+        <li><strong>3</strong><span>languages built in (DE · EN · SQ)</span></li>
+      </ul>
+    </section>
+
+    <section id="projects" class="wrap">
+      <h2 class="section-title">Projects</h2>
+
+      <article class="project">
+        <a class="shot" href="https://buypc-web.vercel.app" target="_blank" rel="noopener">
+          <img src="assets/img/buypc.jpg" alt="BYPC home page: Build your dream PC" loading="lazy" />
+        </a>
+        <div class="info">
+          <p class="kind">Full-stack web app</p>
+          <h3>BYPC — Build Your PC</h3>
+          <p>
+            A guided PC builder. You pick the case, motherboard, CPU, cooler, GPU, power supply, RAM and storage
+            step by step, and each step only offers parts that fit what you already chose: socket, form factor,
+            cooler height, GPU length, RAM type and power draw are all checked. A budget mode suggests the best
+            compatible PC for a given price, using real shop prices.
+          </p>
+          <ul class="tags"><li>Angular</li><li>Three.js</li><li>NestJS</li><li>TypeORM</li><li>PostgreSQL</li><li>Docker</li></ul>
+          <div class="links">
+            <a href="https://buypc-web.vercel.app" target="_blank" rel="noopener">Live site ↗</a>
+            <a href="https://github.com/FatbardhS/buypc-fe" target="_blank" rel="noopener">Frontend code</a>
+            <a href="https://github.com/FatbardhS/buypc-be" target="_blank" rel="noopener">Backend code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <a class="shot" href="https://shootingrange-web.vercel.app" target="_blank" rel="noopener">
+          <img src="assets/img/shootingrange.jpg" alt="TARGET shooting range home page with an animated target" loading="lazy" />
+        </a>
+        <div class="info">
+          <p class="kind">Full-stack website + CMS</p>
+          <h3>TARGET Shooting Range</h3>
+          <p>
+            Website and online shop for a gun store and shooting range in Gjilan, Kosovo. It has an animated
+            intro, a scope crosshair cursor, a target you can score shots on, "View in 3D" product models,
+            and session booking that emails the staff. The owners manage products, brands and bookings in their
+            own CMS. Albanian by default.
+          </p>
+          <ul class="tags"><li>Next.js</li><li>NestJS</li><li>Prisma</li><li>Payload CMS</li><li>Turborepo</li><li>Vercel</li></ul>
+          <div class="links">
+            <a href="https://shootingrange-web.vercel.app" target="_blank" rel="noopener">Live site ↗</a>
+            <a href="https://github.com/FatbardhS/ShootingRange" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <a class="shot" href="https://fatbardhs.github.io/furniture-design/" target="_blank" rel="noopener">
+          <img src="assets/img/furniture.jpg" alt="Closet Studio: 3D wardrobe with a live price quote" loading="lazy" />
+        </a>
+        <div class="info">
+          <p class="kind">3D configurator</p>
+          <h3>Closet Studio</h3>
+          <p>
+            Design a wardrobe or cabinet in the browser and see it in 3D. Set the size, columns, shelves, drawers,
+            doors, handles and finishes, click parts in 3D to edit them, and get a live price with a bill of materials
+            and a cut list. Warnings flag problems like sagging shelves, and the whole quote exports to PDF.
+          </p>
+          <ul class="tags"><li>React 19</li><li>TypeScript</li><li>Three.js</li><li>Tailwind CSS</li><li>jsPDF</li><li>Vitest</li></ul>
+          <div class="links">
+            <a href="https://fatbardhs.github.io/furniture-design/" target="_blank" rel="noopener">Live app ↗</a>
+            <a href="https://github.com/FatbardhS/furniture-design" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <a class="shot" href="https://pizzeria-ledi.vercel.app" target="_blank" rel="noopener">
+          <img src="assets/img/pizzeria.jpg" alt="Pizzeria Ledi home page: Pizza, mit Liebe gebacken" loading="lazy" />
+        </a>
+        <div class="info">
+          <p class="kind">Business website</p>
+          <h3>Pizzeria Ledi</h3>
+          <p>
+            Website for a pizzeria in Berlin with two locations under one domain, in German, English and Italian.
+            Each location edits its own menu, uploads the weekly menu and plans seasonal promotions from an admin page.
+            Google Maps only loads after cookie consent.
+          </p>
+          <ul class="tags"><li>Astro</li><li>Tailwind CSS</li><li>Supabase</li><li>Vercel</li></ul>
+          <div class="links">
+            <a href="https://pizzeria-ledi.vercel.app" target="_blank" rel="noopener">Live site ↗</a>
+            <a href="https://github.com/FatbardhS/pizzeria-Ledi" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project">
+        <a class="shot" href="https://github.com/FatbardhS/barbershop-de" target="_blank" rel="noopener">
+          <img src="assets/img/barbershop.jpg" alt="Leo Barbershop home page" loading="lazy" />
+        </a>
+        <div class="info">
+          <p class="kind">Business website + booking</p>
+          <h3>Leo Barbershop</h3>
+          <p>
+            Website for a barbershop in Berlin with online booking. Taken time slots are stored in a database,
+            so the same barber can't be booked twice. The owner changes prices, barbers and gallery photos from an
+            admin panel, and each save republishes the site automatically.
+          </p>
+          <ul class="tags"><li>Astro</li><li>Tailwind CSS</li><li>Supabase</li><li>Vercel</li></ul>
+          <div class="links">
+            <a href="https://github.com/FatbardhS/barbershop-de" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="skills" class="wrap">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills">
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <p>Angular, React, Next.js, Astro, TypeScript, Tailwind CSS, Three.js</p>
+        </div>
+        <div class="skill-group">
+          <h3>Backend</h3>
+          <p>NestJS, REST APIs, Prisma, TypeORM, Payload CMS</p>
+        </div>
+        <div class="skill-group">
+          <h3>Data</h3>
+          <p>PostgreSQL, Supabase (auth, storage), Neon</p>
+        </div>
+        <div class="skill-group">
+          <h3>Tools</h3>
+          <p>Git &amp; GitHub, Docker, Vercel, GitHub Pages, Vitest, Claude Code</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="wrap contact">
+      <h2>Let's build something.</h2>
+      <p>Need a website or web app? Find me on GitHub.</p>
+      <a class="btn primary" href="https://github.com/FatbardhS" target="_blank" rel="noopener">github.com/FatbardhS</a>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p>© <span id="year">2026</span> Fatbardh S.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
